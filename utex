@@ -7,7 +7,7 @@ if ARGV[0].to_i > 0
 	ut = ARGV[0].to_i
 else
 	puts "usage : utex [unixtime]"
-	puts "---------------------------------------------------------ex"
+	puts "---------------------------------------------------------"
 	ut = Time.now.to_i
 end
 
