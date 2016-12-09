@@ -1,0 +1,20 @@
+#! /usr/bin/env ruby
+require 'time'
+
+et_rate = 1440 / 70
+
+if ARGV[0].to_i > 0
+	ut = ARGV[0].to_i
+else
+	puts "usage : utrb [unixtime]"
+	puts "---------------------------------------------------------"
+	ut = Time.now.to_i
+end
+
+puts "NORMAL    : "+Time.at(ut).strftime("%Y/%m/%d %H:%M:%S %Z")
+puts "UTC       : "+Time.at(ut).gmtime.to_s
+puts "RFC2822   : "+Time.at(ut).rfc2822
+puts "RFC1123   : "+Time.at(ut).httpdate
+puts "ISO8601   : "+Time.at(ut).xmlschema
+puts "CTIME     : "+Time.at(ut).ctime
+puts "EORZEA    : "+Time.at(ut*et_rate).strftime("%H:%M")
