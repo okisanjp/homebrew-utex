@@ -6,8 +6,8 @@ et_rate = 1440 / 70
 if ARGV[0].to_i > 0
 	ut = ARGV[0].to_i
 else
-	puts "usage : utrb [unixtime]"
-	puts "---------------------------------------------------------"
+	puts "usage : utex [unixtime]"
+	puts "---------------------------------------------------------ex"
 	ut = Time.now.to_i
 end
 
