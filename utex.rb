@@ -2,10 +2,10 @@ require "formula"
 
 class Utex < Formula
   homepage "https://github.com/okisanjp/homebrew-utex"
-  url "https://github.com/okisanjp/homebrew-utex/archive/v1.4.tar.gz"
-  sha256 "2d72962763060d1d9f3ec90b05c5d23b44140ed841cac8c0a7de66a1ea735d1a"
+  url "https://github.com/okisanjp/homebrew-utex/archive/v1.5.tar.gz"
+  sha256 "704d640ca786425b6182d6073269db8f5f7fb90c7232eb32b47f00235ce418aa"
   head "https://github.com/okisanjp/homebrew-utex.git"
-  version "1.4"
+  version "1.5"
 
   def install
     bin.install "utex"
